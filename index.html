@@ -1,4 +1,120 @@
-<h1>test<h1
-<h2>this is a test<h2
-<!-- add an image -->
-<img src="images/test.png" alt="image" />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FrameUp — Connect With Your City’s Lens</title>
+  <meta name="description" content="Join photographers in 24 cities for weekly meetups. Capture moments, share your style, and connect through your city's lens." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="logo-bracket">[</span>FRAME<span class="logo-up">UP</span><span class="logo-bracket">]</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a class="nav-link" href="#home">Discover</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="btn btn-primary btn-small" href="#how-it-works">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Landing -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-title">CONNECT<br>WITH YOUR<br>CITY'S LENS</h1>
+
+        <p class="hero-sub">
+          Join photographers in 24 cities for weekly meetups. Capture moments,
+          share your style, and connect through your city's lens.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#how-it-works">Join Your City</a>
+          <a class="btn btn-outline" href="#how-it-works">How It Works</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">24</div>
+            <div class="stat-label">Cities</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">12K+</div>
+            <div class="stat-label">Photographers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Weekly Shoots</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">4.9</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <!-- Use your exact landing-page photo here -->
+        <!-- Place the image file at: /assets/hero.jpg -->
+        <img src="assets/hero.jpg" alt="Photographer holding a Bronica camera in a red jacket" />
+        <figcaption class="media-caption">City Photography Vol. 1</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works" aria-labelledby="how-title">
+    <div class="container">
+      <h2 id="how-title" class="section-title">How it works</h2>
+      <p class="section-sub">Three simple steps to join your local photo community.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Find your city</h3>
+          <p>Browse FrameUp chapters and pick the one closest to you.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Join a meetup</h3>
+          <p>Weekly photo walks where you’ll connect with people who share your eye.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Shoot &amp; share</h3>
+          <p>Capture moments, swap tips, and showcase your city’s spirit together.</p>
+        </div>
+      </div>
+
+      <div class="how-cta">
+        <a class="btn btn-primary btn-large" href="#home">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="brand-small"><span class="logo-bracket">[</span>FRAME<span class="logo-up">UP</span><span class="logo-bracket">]</span></p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home">Discover</a>
+        <a href="#how-it-works">How It Works</a>
+      </nav>
+      <p class="fineprint">© <span id="year"></span> FrameUp. All rights reserved.</p>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
